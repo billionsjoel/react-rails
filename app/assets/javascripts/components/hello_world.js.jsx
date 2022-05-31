@@ -1,14 +1,11 @@
+import ReactDOM from 'react-dom';
+
 var HelloWorld = createReactClass({
-  propTypes: {
-    greeting: PropTypes.string
-  },
+	propTypes: {
+		greeting: PropTypes.string,
+	},
 
-  render: function() {
-    return (
-      <React.Fragment>
-        Greeting: {this.props.greeting}
-      </React.Fragment>
-    );
-  }
+	render: function () {
+		return <React.Fragment>Greeting: {this.props.greeting}</React.Fragment>;
+	},
 });
-
